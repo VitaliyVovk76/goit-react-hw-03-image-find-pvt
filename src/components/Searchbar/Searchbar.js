@@ -8,7 +8,10 @@ class Searchbar extends Component {
   state = { query: "" };
 
   hendleChenge = (evt) => {
-    this.setState({ query: evt.currentTarget.value.toLowerCase() });
+    const { name, value } = evt.currentTarget;
+    this.setState({ [name]: value.toLowerCase() });
+    //или так
+    // this.setState({ query: evt.currentTarget.value.toLowerCase() });
   };
 
   //   hendleChenge = ({ currentTarget }) => {

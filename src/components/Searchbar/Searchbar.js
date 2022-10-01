@@ -11,6 +11,11 @@ class Searchbar extends Component {
     this.setState({ query: evt.currentTarget.value.toLowerCase() });
   };
 
+  //   hendleChenge = ({ currentTarget }) => {
+  //     const { name, value } = currentTarget;
+  //     this.setState({ [name]: value.toLowerCase() });
+  //   };
+
   hendleFormSubmit = (evt) => {
     evt.preventDefault();
     if (this.state.query.trim() === "") {

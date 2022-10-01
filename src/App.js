@@ -34,7 +34,7 @@ class App extends Component {
     if (prevQuery !== nextQuery || prevPage !== nextPage) {
       this.setState({ status: Status.PENDING });
 
-      API.fetchImg(nextQuery, this.state.page)
+      API.fechAxiosImg(nextQuery, this.state.page)
         .then((hits) => {
           if (hits.length === 0) {
             this.setState({

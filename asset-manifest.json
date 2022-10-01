@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-03-image-find-pvt/static/css/main.e679f387.css",
-    "main.js": "/goit-react-hw-03-image-find-pvt/static/js/main.e9e783db.js",
+    "main.css": "/goit-react-hw-03-image-find-pvt/static/css/main.f1dc37ec.css",
+    "main.js": "/goit-react-hw-03-image-find-pvt/static/js/main.b6992964.js",
     "static/js/787.1b92736c.chunk.js": "/goit-react-hw-03-image-find-pvt/static/js/787.1b92736c.chunk.js",
     "static/media/error.jpg": "/goit-react-hw-03-image-find-pvt/static/media/error.7d86105a62bf3b28ec78.jpg",
     "index.html": "/goit-react-hw-03-image-find-pvt/index.html",
-    "main.e679f387.css.map": "/goit-react-hw-03-image-find-pvt/static/css/main.e679f387.css.map",
-    "main.e9e783db.js.map": "/goit-react-hw-03-image-find-pvt/static/js/main.e9e783db.js.map",
+    "main.f1dc37ec.css.map": "/goit-react-hw-03-image-find-pvt/static/css/main.f1dc37ec.css.map",
+    "main.b6992964.js.map": "/goit-react-hw-03-image-find-pvt/static/js/main.b6992964.js.map",
     "787.1b92736c.chunk.js.map": "/goit-react-hw-03-image-find-pvt/static/js/787.1b92736c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e679f387.css",
-    "static/js/main.e9e783db.js"
+    "static/css/main.f1dc37ec.css",
+    "static/js/main.b6992964.js"
   ]
 }

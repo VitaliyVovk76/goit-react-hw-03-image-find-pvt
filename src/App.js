@@ -71,7 +71,11 @@ class App extends Component {
           page: prevState.page,
         };
       }
-      return { searchQuery: query, images: [], page: 1 };
+      return {
+        searchQuery: query,
+        images: [],
+        page: 1,
+      };
     });
   };
 

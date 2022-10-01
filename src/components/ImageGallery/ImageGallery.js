@@ -5,16 +5,21 @@ const ImageGallery = ({ onToggleModal, onSetImgModal, imgList }) => {
   return (
     <ul className={s.gallery}>
       {imgList.map(({ id, webformatURL, largeImageURL, tags }) => (
-        //   <li className={s.item} key={id}>
-        <ImageGalleryItem
+        <li
+          className={s.item}
           key={id}
-          src={webformatURL}
-          modalImg={largeImageURL}
-          alt={tags}
-          width="240"
-          onToggleMod={onToggleModal}
-          onSetImgMod={onSetImgModal}
-        />
+          onClick={() => {
+            onSetImgModal(largeImageURL, tags);
+          }}
+        >
+          <ImageGalleryItem
+            key={id}
+            src={webformatURL}
+            alt={tags}
+            width="240"
+            onToggleMod={onToggleModal}
+          />
+        </li>
       ))}
     </ul>
   );

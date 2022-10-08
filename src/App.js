@@ -97,26 +97,25 @@ class App extends Component {
     return (
       <Container>
         <Searchbar onSubmit={this.hendleFormSubmit} />
-        {status === Status.PENDING && (
-          <>
-            <ImageGallery imgList={images} />
-            <Loader />
-          </>
-        )}
-        {status === Status.RESOLVED && (
+        {(status === Status.PENDING || status === Status.RESOLVED) && (
           <>
             <ImageGallery
               onToggleModal={this.toggleModal}
               onSetImgModal={this.setImgModal}
               imgList={images}
             />
-            <Button
-              type="bunnon"
-              onClick={this.onButtonClick}
-              text="Load more..."
-            />
-            {showModal && (
-              <Modal onClose={this.toggleModal} imgModal={imgModal} />
+            {status === Status.PENDING && <Loader />}
+            {status === Status.RESOLVED && (
+              <>
+                <Button
+                  type="bunnon"
+                  onClick={this.onButtonClick}
+                  text="Load more..."
+                />
+                {showModal && (
+                  <Modal onClose={this.toggleModal} imgModal={imgModal} />
+                )}
+              </>
             )}
           </>
         )}
